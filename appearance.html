@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirAMJJ ADMIN | Settings</title>
+    <link rel="stylesheet" href="appearance.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="logo.jpeg" alt="VirAMJJ Logo">
+                <h2>VirAMJJ</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-comment-dots"></i> Messages</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-bell"></i> Notifications</a>
+                    </li>
+                    <li class="active">
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logout">
+                <a href="#" onclick="logoutUser();"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                <script src="logout.js"></script>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="header">
+            </div>
+
+            <div class="dashboard-content">
+                <h1>Security</h1>
+
+                <div class="settings-tabs">
+                    <ul>
+                        <li>
+                            <a href="settings.html">Profile</a>
+                        </li>
+                        <li>
+                            <a href="security.html">Security</a>
+                        </li>
+                        <li class="active">
+                            <a href="appearance.html">Appearance</a>
+                        </li>
+                    </ul>
+                </div>
+
+                    <div class="tab-content" id="appearance">
+                        <div class="settings-card">
+                            <div class="settings-header">
+                                <h2><i class="fas fa-palette"></i> Appearance Settings</h2>
+                                <p>Customize the look and feel of your dashboard</p>
+                            </div>
+                            
+                            <div class="appearance-settings">
+                                <div class="theme-section">
+                                    <h3>Choose Theme</h3>
+                                    <div class="theme-options">
+                                        <div class="theme-option active">
+                                            <div class="theme-preview light-theme"></div>
+                                            <span>Light</span>
+                                        </div>
+                                        <div class="theme-option">
+                                            <div class="theme-preview dark-theme"></div>
+                                            <span>Dark</span>
+                                        </div>
+                                        <div class="theme-option">
+                                            <div class="theme-preview auto-theme"></div>
+                                            <span>System</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="color-scheme-section">
+                                    <h3>Color Scheme</h3>
+                                    <div class="color-options">
+                                        <div class="color-option active">
+                                            <div class="color-preview blue-scheme"></div>
+                                            <span>Blue</span>
+                                        </div>
+                                        <div class="color-option">
+                                            <div class="color-preview green-scheme"></div>
+                                            <span>Green</span>
+                                        </div>
+                                        <div class="color-option">
+                                            <div class="color-preview purple-scheme"></div>
+                                            <span>Purple</span>
+                                        </div>
+                                        <div class="color-option">
+                                            <div class="color-preview orange-scheme"></div>
+                                            <span>Orange</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="layout-section">
+                                    <h3>Layout Options</h3>
+                                    <div class="notification-option">
+                                        <div class="notification-info">
+                                            <h4>Compact Sidebar</h4>
+                                            <p>Use narrower sidebar navigation</p>
+                                        </div>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox">
+                                            <span class="switch-slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="notification-option">
+                                        <div class="notification-info">
+                                            <h4>Fixed Header</h4>
+                                            <p>Keep header visible when scrolling</p>
+                                        </div>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" checked>
+                                            <span class="switch-slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="notification-option">
+                                        <div class="notification-info">
+                                            <h4>Card Shadows</h4>
+                                            <p>Display shadow effects on cards</p>
+                                        </div>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" checked>
+                                            <span class="switch-slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-buttons">
+                                    <button type="submit" class="btn-save-changes">Save Preferences</button>
+                                    <button type="button" class="btn-cancel">Reset to Default</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

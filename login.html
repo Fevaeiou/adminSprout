@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <div class="logo">
+                <span class="logo-icon">A</span>
+            </div>
+            <h1>Admin Login</h1>
+            <p>Enter your credentials to access the admin panel</p>
+        </div>
+        
+        <div class="error-message" id="error-message">
+            Invalid username or password. Please try again.
+        </div>
+        
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div class="forgot-password">
+                <a href="#reset-password">Forgot Password?</a>
+            </div>
+            
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>
